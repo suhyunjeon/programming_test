@@ -4,9 +4,6 @@ import algorithm.leetcode.PalindromeNumber._
 import org.scalatest.FunSuite
 import org.scalatest.Matchers._
 
-/**
-  * Created by suhyunjeon on 2018. 12. 23..
-  */
 class PalindromeNumberTest extends FunSuite {
   test("palindrome number1") {
     isPalindrome(121) should be (true)
@@ -19,10 +16,8 @@ class PalindromeNumberTest extends FunSuite {
   test("palindrome number3") {
     isPalindrome(10) should be (false)
   }
-//
-//  test("palindrome number4") {
-//    isPalindrome(Int.MaxValue + 1) should be (0)
-//  }
 
-
+  test("palindrome number4") {
+    isPalindrome(Int.MaxValue + 1) should be (0)
+  }
 }
